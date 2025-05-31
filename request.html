@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request | Nanolib</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/17f3d260c4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="navigationbar" id="topNav">
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="request.html">
+        <button class="request-button enable">Request a book</button>
+      </a>
+      <a href="javascript:void(0);" class="icon" onclick="verticalnav()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <form class="request-container" action="https://formspree.io/f/xanjwbyv"
+  method="POST">
+    <input placeholder="Book Name*" id="i1" required type="name" name="Book">
+    <input placeholder="Author Name*" id="i2" required type="name" name="Author">
+    <input placeholder="ISBN (Optional)" id="i3" type="number" name="ISBN">
+    <textarea placeholder="Additional Information (Optional)" type="text" id="i4" name="Additional-Information"></textarea>
+    <button type="submit" class="submit-button">Submit Request</button>
+  </form>
+  <script src="navigation.js"></script>
+</body>
+</html>

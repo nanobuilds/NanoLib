@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Nanolib</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/17f3d260c4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="navigationbar" id="topNav">
+    <input type="search" class="searchbar" placeholder="Search Books">
+    <div class="links">
+      <a href="index.html" style="font-weight: 600;">Home</a>
+      <a href="about.html">About</a>
+      <a href="request.html">
+        <button class="request-button">Request a book</button>
+      </a>
+      <a href="javascript:void(0);" class="icon" onclick="verticalnav()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="bookshelf">
+    <a href="/epubs/thealchemist-paulocoelho.epub" download>
+      <div class="book" id="b1">
+        <p class="title">The Alchemist</p>
+        <p class="author">PAULO COELHO</p>
+      </div>
+    </a>
+    <a href="/epubs/loveless-aliceoseman.epub" download>
+      <div class="book" id="b2">
+        <p class="title">Loveless</p>
+        <p class="author">Alice Oseman</p>
+      </div>
+    </a>
+    <a href="/epubs/thesevenhusbandsofevelynhugo-taylorjenkinsreid.epub" download>
+      <div class="book" id="b3">
+        <p class="title">
+          The SEVEN HUSBANDS of
+          <br>
+          EVELYN HUGO
+        </p>
+        <p class="author">TAYLOR JENKINS REID</p>
+      </div>
+    </a>
+  </div>
+  <script src="search.js"></script>
+  <script src="navigation.js"></script>
+</body>
+</html>
