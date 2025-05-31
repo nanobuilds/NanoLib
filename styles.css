@@ -278,3 +278,7 @@ body {
   box-shadow: 5px 5px;
   cursor: pointer;
 }
+
+input, textarea, button, a, select {
+  -webkit-tap-highlight-color: transparent;
+}
